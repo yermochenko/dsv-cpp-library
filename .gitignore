@@ -1,0 +1,10 @@
+.*
+/**/x64/
+/**/[Bb]in/
+/**/[Dd]ebug/
+/**/[Rr]elease/
+*.user
+*.exe
+*.obj
+*.tmp
+*.log
