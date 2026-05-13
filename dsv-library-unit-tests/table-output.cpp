@@ -144,5 +144,30 @@ namespace DsvLibraryUnitTests
 			sout << table;
 			Assert::AreEqual(std::string("123;abc\r\n456;;xyz\r\n789;mnk"), sout.str());
 		}
+		TEST_METHOD(test12)
+		{
+			Table table(';');
+			table.getData() = {
+				{},
+				{"123", "abc"},
+				{"456", "xyz"},
+				{"789", "mnk"}
+			};
+			std::ostringstream sout;
+			sout << table;
+			Assert::AreEqual(std::string("\r\n123;abc\r\n456;xyz\r\n789;mnk"), sout.str());
+		}
+		TEST_METHOD(test13)
+		{
+			Table table(';');
+			table.getData() = {
+				{"123", "abc"},
+				{"", "456", "xyz"},
+				{"789", "mnk"}
+			};
+			std::ostringstream sout;
+			sout << table;
+			Assert::AreEqual(std::string("123;abc\r\n;456;xyz\r\n789;mnk"), sout.str());
+		}
 	};
 }
