@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="dsv-library-unit-tests/dsv-library-unit-tests.vcxproj" />
   <Project Path="dsv-library/dsv-library.vcxproj" Id="b83cbfe7-7058-427a-9574-8cadb2986e16" />
 </Solution>
