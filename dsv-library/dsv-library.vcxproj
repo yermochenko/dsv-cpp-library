@@ -128,9 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
+    <ClCompile Include="dsv\parse-error.cpp" />
     <ClCompile Include="dsv\table.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dsv\eol.h" />
+    <ClInclude Include="dsv\parse-error.h" />
     <ClInclude Include="dsv\table.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

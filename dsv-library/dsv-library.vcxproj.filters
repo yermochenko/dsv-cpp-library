@@ -21,9 +21,18 @@
     <ClCompile Include="dsv\table.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dsv\parse-error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dsv\table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsv\eol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsv\parse-error.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
